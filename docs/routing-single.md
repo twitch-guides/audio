@@ -52,7 +52,7 @@ If you have something else in mind, feel free to set up your own configuration d
 6. Now you need to add the new ASIO channels to your DAW. In Reaper, just select the first/last device each like shown
 in the picture. You'll have to manually create and assign channels in most of the other DAWs. The first devices on the list
 belong to your hardware, they might be named differently for you.
-![Reaper ASIO settings](../resources/reaper-settings.png)
+![Reaper ASIO settings](resources/reaper-settings.png)
 
 That's it, now you need to set up the DAW itself the way you want it.
 
@@ -65,7 +65,7 @@ is basically the same for any channel, whether it's a Microphone, an Application
 * Turn Monitoring to ON
 * Arm the Track for Recording
 
-![Microphone channel](../resources/reaper-channel.png)
+![Microphone channel](resources/reaper-channel.png)
 
 You should now be able to hear things coming from this input. Next, repeat this for all the input channels you have.
 It's probably a good idea to set all your channels to -6dB initially, so you never run into clipping issues. You can
@@ -74,7 +74,7 @@ always make up the lost volume in a limiter on the master.
 Now you'll want to set up a bus channel for your stream mix and send the microphone channel to a separate output. Create
 a channel, open its routing panel and select *Add new hardware output -> Stream Mix 1/Stream Mix 2* (assuming you used
 the config file from above). Deselect *Send to Master*, and use *Add new receive -> Add receives from all tracks*. After
-this the routing panel for the channel should look something like this: ![Routing panel](../resources/stream-routing.png)
+this the routing panel for the channel should look something like this: ![Routing panel](resources/stream-routing.png)
 
 Alternatively, you could also just add the Stream output to your master channel, however you won't be able to exclude
 certain channels from the stream if you do this. With the setup like above, you could just remove the send to stream from
@@ -89,7 +89,7 @@ OBS should pick up your Audio now.
 
 The final Reaper mixer panel looks like this now:
 
-![Mixer](../resources/reaper-mixer.png)
+![Mixer](resources/reaper-mixer.png)
 
 Next, you could add some VST plugins to your voice channel (like I have done here) and continue to customize things however
 you need them.
@@ -100,4 +100,4 @@ you need them.
 [Studio One]: http://studioone.presonus.com/
 [Bitwig]: https://www.bitwig.com
 [Reaper]: http://www.reaper.fm/
-[SAR config]: ../resources/default.json
+[SAR config]: resources/default.json
