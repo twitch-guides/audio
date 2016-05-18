@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Single Computer - Streaming Audio Guides</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Single Computer";
+    var mkdocs_page_input_path = "routing-single.md";
+    var mkdocs_page_url = "/routing-single/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Streaming Audio Guides</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Routing</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Single Computer</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#sending-your-audio-through-a-daw">Sending your Audio through a DAW</a></li>
+                
+                    <li><a class="toctree-l4" href="#installing-the-tools">Installing the tools</a></li>
+                
+                    <li><a class="toctree-l4" href="#setting-up-the-driver">Setting up the Driver</a></li>
+                
+                    <li><a class="toctree-l4" href="#setting-up-your-routing-in-the-daw">Setting up your routing in the DAW</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Streaming Audio Guides</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Routing &raquo;</li>
+        
+      
+    
+    <li>Single Computer</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="sending-your-audio-through-a-daw">Sending your Audio through a DAW</h2>
+<p><em>(DAW: Digital Audio Workstation. Basically a software mixer, audio processor, recorder and many more things)</em></p>
+<p>This is probably the most flexible way to handle Audio a single computer setup - you can separate audio sources like applications,
+games, VoIP applications (Skype, Discord etc.), control if only you or your stream should be able to hear them, process them
+in real time and record them separately if needed.</p>
+<p>The idea is that you create several virtual Windows audio devices, for example one for games, one for other applications,
+whatever you need. Those devices feed into your DAW (along with your microphone) which you can use to control volumes and
+whatever else you want to do with the audio. Then you send the audio from there into another virtual Windows audio device
+which you can select in OBS/XSplit.</p>
+<p>Installing the necessary tools is fairly quick, but you will have to invest some time into learning how to use
+the DAW that you will be sending your audio through if you have never used one.</p>
+<h3 id="installing-the-tools">Installing the tools</h3>
+<ol>
+<li>Make sure you have an ASIO driver. If you have an audio interface or any other (semi-)professional sound card it should have
+one, otherwise you will need to use <a href="http://www.asio4all.com/">Asio4All</a>. I won't cover how to set up Asio4All here, but it's really not hard.</li>
+<li>Install <a href="https://github.com/eiz/SynchronousAudioRouter/releases" title="Synchronous Audio Router">Synchronous Audio Router</a></li>
+<li>Pick your favorite DAW software and install it.</li>
+</ol>
+<p>Some nice ones to choose from:</p>
+<ul>
+<li><a href="https://www.ableton.com">Ableton Live</a>: Developed for live performing and recording alike, has nice ways to use oneshot clips and extremely good MIDI
+controller support</li>
+<li><a href="http://studioone.presonus.com/">Studio One</a>: A bit more conventional, but still very slick UI. Has a free version, but unlike the paid one it doesn't support
+VST plugins and the integrated plugin selection is rather small</li>
+<li><a href="https://www.bitwig.com">Bitwig</a>: A bit like Ableton Live, but with a different flavor to it. Also somewhat performance oriented</li>
+<li><a href="http://www.reaper.fm/">Reaper</a>: UI is a bit harder to get into at first, but also very powerful and by far the cheapest of them all. Also, the trial
+lasts 60 days and nothings stops you from using it after it expires. You should probably buy it after that, but nobody's forcing
+you to.</li>
+</ul>
+<p>They all have their own advantages and disadvantages, it can't hurt to download some of the trial versions and just see
+what you like best. If it needs to be as cheap as possible, go with Reaper. I'll explain the rest of this guide with Reaper
+in mind because of that, but it's easily transferable to any of the other ones.</p>
+<h3 id="setting-up-the-driver">Setting up the Driver</h3>
+<p>If you want to get going as fast as possible, download this <a href="../resources/default.json">configuration file</a> and save it to <code>%appdata%\SynchronousAudioRouter</code>.
+It has windows playback devices for Applications, Games, VoIP and Music, windows recording devices for the Stream and just your
+Voice and will send all Steam games to the "Games" device without having to change anything.</p>
+<p>If you have something else in mind, feel free to set up your own configuration directly in the driver.</p>
+<ol>
+<li>Start your DAW with admin privileges (the SAR driver currently requires this to work)</li>
+<li>Open the Audio driver settings. In Reaper, Options/Audio/Device.</li>
+<li>Select ASIO Driver: Synchronous Audio Router</li>
+<li>Click on "ASIO Configuration" and then select your driver under "Hardware Interface"</li>
+<li>[set up windows devices here if necessary]</li>
+<li>Now you need to add the new ASIO channels to your DAW. In Reaper, just select the first/last device each like shown
+in the picture. You'll have to manually create and assign channels in most of the other DAWs. The first devices on the list
+belong to your hardware, they might be named differently for you.
+<img alt="Reaper ASIO settings" src="../resources/reaper-settings.png" /></li>
+</ol>
+<p>That's it, now you need to set up the DAW itself the way you want it.</p>
+<h3 id="setting-up-your-routing-in-the-daw">Setting up your routing in the DAW</h3>
+<p>First, create a channel for your Microphone. To do that, press <code>CTRL + T</code> to create it, and then set up the channel. This
+is basically the same for any channel, whether it's a Microphone, an Application channel or something entirely different.</p>
+<ul>
+<li>Select the correct input channel</li>
+<li>Turn Monitoring to ON</li>
+<li>Arm the Track for Recording</li>
+</ul>
+<p><img alt="Microphone channel" src="../resources/reaper-channel.png" /></p>
+<p>You should now be able to hear things coming from this input. Next, repeat this for all the input channels you have.
+It's probably a good idea to set all your channels to -6dB initially, so you never run into clipping issues. You can
+always make up the lost volume in a limiter on the master.</p>
+<p>Now you'll want to set up a bus channel for your stream mix and send the microphone channel to a separate output. Create
+a channel, open its routing panel and select <em>Add new hardware output -&gt; Stream Mix 1/Stream Mix 2</em> (assuming you used
+the config file from above). Deselect <em>Send to Master</em>, and use <em>Add new receive -&gt; Add receives from all tracks</em>. After
+this the routing panel for the channel should look something like this: <img alt="Routing panel" src="../resources/stream-routing.png" /></p>
+<p>Alternatively, you could also just add the Stream output to your master channel, however you won't be able to exclude
+certain channels from the stream if you do this. With the setup like above, you could just remove the send to stream from
+any of the individual channels or turn down its volume to -inf dB and you'll have muted just that channel for the stream,
+but you can still hear it.</p>
+<p>Finally, add the <em>Voice 1/Voice 2</em> outputs to your Microphone channel.</p>
+<p>You can now select the two audio devices (Voice and Stream) in the OBS settings. They will both be windows recording devices, so they'll
+be listed under <em>Mic/Auxiliary Audio Device</em> in OBS Studio. There should be no other Audio devices selected in the OBS settings.
+OBS should pick up your Audio now.</p>
+<p>The final Reaper mixer panel looks like this now:</p>
+<p><img alt="Mixer" src="../resources/reaper-mixer.png" /></p>
+<p>Next, you could add some VST plugins to your voice channel (like I have done here) and continue to customize things however
+you need them.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
