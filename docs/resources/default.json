@@ -1,0 +1,81 @@
+{
+  "applications": [
+    {
+      "defaults": [
+        {
+          "id": "ep_2",
+          "role": "console",
+          "type": "playback"
+        },
+        {
+          "id": "ep_2",
+          "role": "communications",
+          "type": "playback"
+        },
+        {
+          "id": "ep_2",
+          "role": "multimedia",
+          "type": "playback"
+        },
+        {
+          "id": "ep_4",
+          "role": "console",
+          "type": "recording"
+        },
+        {
+          "id": "ep_4",
+          "role": "communications",
+          "type": "recording"
+        },
+        {
+          "id": "ep_4",
+          "role": "multimedia",
+          "type": "recording"
+        }
+      ],
+      "description": "Steam",
+      "path": ".+\\\\steamapps\\\\common\\\\.+",
+      "regexMatch": true
+    }
+  ],
+  "driverClsid": "",
+  "enableApplicationRouting": true,
+  "endpoints": [
+    {
+      "channelCount": 2,
+      "description": "Applications",
+      "id": "ep_1",
+      "type": "playback"
+    },
+    {
+      "channelCount": 2,
+      "description": "Games",
+      "id": "ep_2",
+      "type": "playback"
+    },
+    {
+      "channelCount": 2,
+      "description": "Voip",
+      "id": "ep_3",
+      "type": "playback"
+    },
+    {
+      "channelCount": 2,
+      "description": "Voice",
+      "id": "ep_4",
+      "type": "recording"
+    },
+    {
+      "channelCount": 2,
+      "description": "Stream Mix",
+      "id": "ep_5",
+      "type": "recording"
+    },
+    {
+      "channelCount": 2,
+      "description": "Music",
+      "id": "ep_6",
+      "type": "playback"
+    }
+  ]
+}
