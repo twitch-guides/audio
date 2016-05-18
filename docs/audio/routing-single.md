@@ -65,13 +65,34 @@ is basically the same for any channel, whether it's a Microphone, an Application
 * Turn Monitoring to ON
 * Arm the Track for Recording
 
-You should now be able to hear things coming from this input. It's probably a good idea to set all your channels to -6dB
-initially, so you never run into clipping issues. To tune the volume of your stream as a whole, you can make up the lost
-volume by putting a
+![Microphone channel](../resources/reaper-channel.png)
 
-![Reaper ASIO settings](../resources/reaper-channel.png)
+You should now be able to hear things coming from this input. Next, repeat this for all the input channels you have.
+It's probably a good idea to set all your channels to -6dB initially, so you never run into clipping issues. You can
+always make up the lost volume in a limiter on the master.
 
-Ymmv for different DAWs, but it'll be along these lines.
+Now you'll want to set up a bus channel for your stream mix and send the microphone channel to a separate output. Create
+a channel, open its routing panel and select *Add new hardware output -> Stream Mix 1/Stream Mix 2* (assuming you used
+the config file from above). Deselect *Send to Master*, and use *Add new receive -> Add receives from all tracks*. After
+this the routing panel for the channel should look something like this: ![Routing panel](../resources/stream-routing.png)
+
+Alternatively, you could also just add the Stream output to your master channel, however you won't be able to exclude
+certain channels from the stream if you do this. With the setup like above, you could just remove the send to stream from
+any of the individual channels or turn down its volume to -inf dB and you'll have muted just that channel for the stream,
+but you can still hear it.
+
+Finally, add the *Voice 1/Voice 2* outputs to your Microphone channel.
+
+You can now select the two audio devices (Voice and Stream) in the OBS settings. They will both be windows recording devices, so they'll
+be listed under *Mic/Auxiliary Audio Device* in OBS Studio. There should be no other Audio devices selected in the OBS settings.
+OBS should pick up your Audio now.
+
+The final Reaper mixer panel looks like this now:
+
+![Mixer](../resources/reaper-mixer.png)
+
+Next, you could add some VST plugins to your voice channel (like I have done here) and continue to customize things however
+you need them.
 
 [SAR]: https://github.com/eiz/SynchronousAudioRouter/releases "Synchronous Audio Router"
 [Asio4All]: http://www.asio4all.com/

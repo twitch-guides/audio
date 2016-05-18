@@ -2,6 +2,5 @@ site_name: Streaming Guides
 theme: readthedocs
 pages:
   - Home: index.md
-  - Audio:
-    - Routing:
-      - Single Computer: audio/routing-single.md
+  - Routing:
+    - Single Computer: audio/routing-single.md
