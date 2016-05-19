@@ -29,6 +29,26 @@
             "location": "/routing-single/#setting-up-your-routing-in-the-daw", 
             "text": "First, create a channel for your Microphone. To do that, press  CTRL + T  to create it, and then set up the channel. This\nis basically the same for any channel, whether it's a Microphone, an Application channel or something entirely different.   Select the correct input channel  Turn Monitoring to ON  Arm the Track for Recording    You should now be able to hear things coming from this input. Next, repeat this for all the input channels you have.\nIt's probably a good idea to set all your channels to -6dB initially, so you never run into clipping issues. You can\nalways make up the lost volume in a limiter on the master.  Now you'll want to set up a bus channel for your stream mix and send the microphone channel to a separate output. Create\na channel, open its routing panel and select  Add new hardware output -  Stream Mix 1/Stream Mix 2  (assuming you used\nthe config file from above). Deselect  Send to Master , and use  Add new receive -  Add receives from all tracks . After\nthis the routing panel for the channel should look something like this:   Alternatively, you could also just add the Stream output to your master channel, however you won't be able to exclude\ncertain channels from the stream if you do this. With the setup like above, you could just remove the send to stream from\nany of the individual channels or turn down its volume to -inf dB and you'll have muted just that channel for the stream,\nbut you can still hear it.  Finally, add the  Voice 1/Voice 2  outputs to your Microphone channel.  You can now select the two audio devices (Voice and Stream) in the OBS settings. They will both be windows recording devices, so they'll\nbe listed under  Mic/Auxiliary Audio Device  in OBS Studio. There should be no other Audio devices selected in the OBS settings.\nOBS should pick up your Audio now.  The final Reaper mixer panel looks like this now:   Next, you could add some VST plugins to your voice channel (like I have done here) and continue to customize things however\nyou need them.", 
             "title": "Setting up your routing in the DAW"
+        }, 
+        {
+            "location": "/free-vsts/", 
+            "text": "Here's a list of some \nfree\n quality VST plugins for common tasks in streaming. These are mostly useful for enhancing your microphone\nsound and making your voice \"fit in\" with other audio sources, but sometimes it may also be useful to add processing to\nsound coming from games or applications.\n\n\nKeep in mind that they are simply tools - if you don't know how to use them, you might do more damage than good, but if you\nuse them well they can make a big difference.\n\n\nCompressors and Limiters\n\n\n\n\nTDR Kotelnikov\n by Tokyo Dawn Records\n\n\n\n\njust a very well rounded compressor that has all the buttons and does all the things\n\n\n\n\nThrillseeker LA\n by Variety of Sound\n\n\n\n\nLimiter, well suited for pushing the volume on sum signals a bit\n\n\n\n\nReaComp\n by Cockos, from the ReaPlugs suite\n  Just a compressor. Precise, no frills\n\n\n\n\nEqualizers\n\n\n\n\nTDR Nova\n by Tokyo Dawn Records\n\n\n\n\nFully parametric and allows for dynamic equalizing, very indepth and powerful. Can be used as a de-esser\n\n\n\n\nBootEQ mkII\n by Variety of Sound\n\n\n\n\n4 Bands semi parametric + an optional saturation stage. Simple \n practical for a lot of applications\n\n\n\n\nTDR VOS SlickEQ\n by Tokyo Dawn Records\n\n\n\n\n3 Bands semi parametric + a high pass, switchable characteristics. Quick to dial in and totally sufficient for most things\n\n\n\n\nReaEQ\n by Cockos, from the ReaPlugs suite\n\n\n\n\nNo frills fully parametric EQ. Will do everything you need.\n\n\nGates/Expanders\n\n\n\n\nFloorfish\n by digitalfishphones", 
+            "title": "Collection of free VST plugins"
+        }, 
+        {
+            "location": "/free-vsts/#compressors-and-limiters", 
+            "text": "TDR Kotelnikov  by Tokyo Dawn Records   just a very well rounded compressor that has all the buttons and does all the things   Thrillseeker LA  by Variety of Sound   Limiter, well suited for pushing the volume on sum signals a bit   ReaComp  by Cockos, from the ReaPlugs suite\n  Just a compressor. Precise, no frills", 
+            "title": "Compressors and Limiters"
+        }, 
+        {
+            "location": "/free-vsts/#equalizers", 
+            "text": "TDR Nova  by Tokyo Dawn Records   Fully parametric and allows for dynamic equalizing, very indepth and powerful. Can be used as a de-esser   BootEQ mkII  by Variety of Sound   4 Bands semi parametric + an optional saturation stage. Simple   practical for a lot of applications   TDR VOS SlickEQ  by Tokyo Dawn Records   3 Bands semi parametric + a high pass, switchable characteristics. Quick to dial in and totally sufficient for most things   ReaEQ  by Cockos, from the ReaPlugs suite   No frills fully parametric EQ. Will do everything you need.", 
+            "title": "Equalizers"
+        }, 
+        {
+            "location": "/free-vsts/#gatesexpanders", 
+            "text": "Floorfish  by digitalfishphones", 
+            "title": "Gates/Expanders"
         }
     ]
 }
