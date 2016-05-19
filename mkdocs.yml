@@ -4,3 +4,4 @@ pages:
   - Home: index.md
   - Routing:
     - Single Computer: routing-single.md
+  - Collection of free VST plugins: free-vsts.md
