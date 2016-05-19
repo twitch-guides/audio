@@ -23,7 +23,7 @@ use them well they can make a big difference.
 
 * [TDR Nova](http://www.tokyodawn.net/tdr-nova/) by Tokyo Dawn Records
 
-   Fully parametric and allows for dynamic equalizing, very indepth and powerful
+   Fully parametric and allows for dynamic equalizing, very indepth and powerful. Can be used as a de-esser
 
 * [BootEQ mkII](https://varietyofsound.wordpress.com/downloads/) by Variety of Sound
 
@@ -36,3 +36,7 @@ use them well they can make a big difference.
 * [ReaEQ](http://www.reaper.fm/reaplugs/) by Cockos, from the ReaPlugs suite
 
   No frills fully parametric EQ. Will do everything you need.
+
+## Gates/Expanders
+
+* [Floorfish](http://www.digitalfishphones.com/main.php?item=2&subItem=5) by digitalfishphones
