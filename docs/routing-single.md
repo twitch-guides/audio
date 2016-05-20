@@ -1,6 +1,6 @@
-## Sending your Audio through a DAW
+## Audio routing with a DAW
 
-*(DAW: Digital Audio Workstation. Basically a software mixer, audio processor, recorder and many more things)*
+*(DAW: Digital Audio Workstation. Basically a software mixer, audio processor, VST host, recorder and many more things)*
 
 This is probably the most flexible way to handle Audio a single computer setup - you can separate audio sources like applications,
 games, VoIP applications (Skype, Discord etc.), control if only you or your stream should be able to hear them, process them
