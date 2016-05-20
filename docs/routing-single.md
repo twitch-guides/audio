@@ -48,7 +48,9 @@ If you have something else in mind, feel free to set up your own configuration d
 2. Open the Audio driver settings. In Reaper, Options/Audio/Device.
 3. Select ASIO Driver: Synchronous Audio Router
 4. Click on "ASIO Configuration" and then select your driver under "Hardware Interface"
-5. [set up windows devices here if necessary]
+5. If you are not using the config file from above, you need to add your playback/recording devices in the driver now for
+   all the channels that you will be needing. Keep in mind that a (windows) playback device will be an **input** in your DAW
+   and a recording device will be an **output** in the DAW.
 6. Now you need to add the new ASIO channels to your DAW. In Reaper, just select the first/last device each like shown
 in the picture. You'll have to manually create and assign channels in most of the other DAWs. The first devices on the list
 belong to your hardware, they might be named differently for you.
