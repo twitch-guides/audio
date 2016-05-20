@@ -33,8 +33,8 @@ lasts 60 days and nothings stops you from using it after it expires. You should 
 you to.
 
 They all have their own advantages and disadvantages, it can't hurt to download some of the trial versions and just see
-what you like best. If it needs to be as cheap as possible, go with Reaper. I'll explain the rest of this guide with Reaper
-in mind because of that, but it's easily transferable to any of the other ones.
+what you like best. If it needs to be as cheap as possible, go with Reaper. **I'll explain the rest of this guide with Reaper
+in mind because of that, but it's easily transferable to any of the other ones.**
 
 ### Setting up the Driver
 
