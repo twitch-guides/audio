@@ -87,6 +87,8 @@ You can now select the two audio devices (Voice and Stream) in the OBS settings.
 be listed under *Mic/Auxiliary Audio Device* in OBS Studio. There should be no other Audio devices selected in the OBS settings.
 OBS should pick up your Audio now.
 
+![OBS Settings](resources/obs-settings.png)
+
 The final Reaper mixer panel looks like this now:
 
 ![Mixer](resources/reaper-mixer.png)
