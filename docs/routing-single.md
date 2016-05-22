@@ -104,14 +104,18 @@ you need them.
 buffer sizes require more CPU resources as the audio needs to be processed quicker, but they reduce the latency of your
 system. Typical buffer sizes are in the range of 64 and 512 samples.
 
-   If you notice delay when monitoring your microphone, lower your buffer size.
+   If you notice delay when monitoring your microphone, lower your buffer size. For the microphone monitoring to feel
+   instant, you need to keep your latency below 10-15ms or so. As there's an output + input buffer, so to get a latency below
+   10ms, you need them to be shorter than 5ms (~220 samples at 44.1kHz). Otherwise you might experience [this effect][voice jammer].
+
    If you notice crackle/microstutters or similar things in your Audio, increase your buffer size. You are probably
    experiencing buffer underflows, meaning your CPU can't fill the buffer with processed audio quick enough before it
    needs to be sent to output.
 
-* **Switching between monitor & stream on the fly**: If you use this setup to have two different mixes for you and the stream, an audio interface with two output pairs is
-extremely helpful. Usually you can switch the headphones from out 1/2 to 3/4 on those interfaces, so you can send your
-monitor channel to one and stream to the other. Then you can switch your headphones to
+* **Switching between monitor & stream on the fly**: If you use this setup to have two different mixes for you and the
+stream, an audio interface with two output pairs is extremely helpful. Usually you can switch the headphones from out
+1/2 to 3/4 on those interfaces, so you can send your monitor channel to one and stream to the other. Then you can switch
+your headphones to either of the channels on the fly.
 
 
 [SAR]: https://github.com/eiz/SynchronousAudioRouter/releases "Synchronous Audio Router"
@@ -121,3 +125,4 @@ monitor channel to one and stream to the other. Then you can switch your headpho
 [Bitwig]: https://www.bitwig.com
 [Reaper]: http://www.reaper.fm/
 [SAR config]: resources/default.json
+[voice jammer]: https://www.youtube.com/watch?v=hnaOpWCJwXU
