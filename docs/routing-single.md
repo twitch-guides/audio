@@ -39,8 +39,8 @@ in mind because of that, but it's easily transferable to any of the other ones.*
 ### Setting up the Driver
 
 If you want to get going as fast as possible, download this [configuration file][SAR config] and save it to `%appdata%\SynchronousAudioRouter`.
-It has windows playback devices for Applications, Games, VoIP and Music, windows recording devices for the Stream and just your
-Voice and will send all Steam games to the "Games" device without having to change anything.
+It has windows playback devices for Applications, Games, VoIP and Music, windows recording devices for the stream and your
+voice, and it will send all Steam games to the "Games" device without having to change anything.
 
 If you have something else in mind, feel free to set up your own configuration directly in the driver.
 
