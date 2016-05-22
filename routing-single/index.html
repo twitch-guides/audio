@@ -222,7 +222,7 @@ system. Typical buffer sizes are in the range of 64 and 512 samples.</li>
 </ul>
 <p>If you notice delay when monitoring your microphone, lower your buffer size. For the microphone monitoring to feel
    instant, you need to keep your latency below 10-15ms or so. There are output + input buffers, so to get a latency below
-   10ms, you need them to be shorter than 5ms (~220 samples at 44.1kHz). Otherwise you might experience <a href="https://www.youtube.com/watch?v=hnaOpWCJwXU">this effect</a>.</p>
+   10ms, you need them to be shorter than 5ms (~220 samples at 44.1kHz). Otherwise you might experience <a href="https://youtu.be/hnaOpWCJwXU?t=252">this effect</a>.</p>
 <p>If you notice crackle/microstutters or similar things in your Audio, increase your buffer size. You are probably
    experiencing buffer underflows, meaning your CPU can't fill the buffer with processed audio quick enough before it
    needs to be sent to output.</p>
