@@ -125,4 +125,4 @@ your headphones to either of the channels on the fly.
 [Bitwig]: https://www.bitwig.com
 [Reaper]: http://www.reaper.fm/
 [SAR config]: resources/default.json
-[voice jammer]: https://www.youtube.com/watch?v=hnaOpWCJwXU
+[voice jammer]: https://youtu.be/hnaOpWCJwXU?t=252
