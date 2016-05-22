@@ -98,6 +98,22 @@ The final Reaper mixer panel looks like this now:
 Next, you could add some VST plugins to your voice channel (like I have done here) and continue to customize things however
 you need them.
 
+### Other notes & ideas
+
+* **Buffer size, latency and CPU usage:** In your ASIO driver panel, you should be able to select a buffer size. Smaller
+buffer sizes require more CPU resources as the audio needs to be processed quicker, but they reduce the latency of your
+system. Typical buffer sizes are in the range of 64 and 512 samples.
+
+   If you notice delay when monitoring your microphone, lower your buffer size.
+   If you notice crackle/microstutters or similar things in your Audio, increase your buffer size. You are probably
+   experiencing buffer underflows, meaning your CPU can't fill the buffer with processed audio quick enough before it
+   needs to be sent to output.
+
+* **Switching between monitor & stream on the fly**: If you use this setup to have two different mixes for you and the stream, an audio interface with two output pairs is
+extremely helpful. Usually you can switch the headphones from out 1/2 to 3/4 on those interfaces, so you can send your
+monitor channel to one and stream to the other. Then you can switch your headphones to
+
+
 [SAR]: https://github.com/eiz/SynchronousAudioRouter/releases "Synchronous Audio Router"
 [Asio4All]: http://www.asio4all.com/
 [Ableton Live]: https://www.ableton.com
